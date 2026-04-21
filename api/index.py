@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 
 app = Flask(__name__, template_folder='../templates')
-app.secret_key = os.environ.get('SECRET_KEY', 'your-secret-key-here-change-in-production')
+app.secret_key = os.environ.get('SECRET_KEY')
 
 # ============================================================
 # USSD MENUS (Same as before - keeping it for reference)
